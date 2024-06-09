@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="LearnSpark">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <option name="explainTypeErrors" value="true" />
+      <parameters>
+        <parameter value="-target:jvm-1.8" />
+        <parameter value="-Xfatal-warnings" />
+        <parameter value="-Ywarn-unused:imports" />
+        <parameter value="-P:silencer:globalFilters=.*deprecated.*" />
+      </parameters>
+      <plugins>
+        <plugin path="$MAVEN_REPOSITORY$/com/github/ghik/silencer-plugin_2.12.18/1.7.13/silencer-plugin_2.12.18-1.7.13.jar" />
+      </plugins>
+    </profile>
+  </component>
+</project>
